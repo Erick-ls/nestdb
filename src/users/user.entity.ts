@@ -14,7 +14,7 @@ export class User {
     @Column({type:'datetime', default: () => 'CURRENT_TIMESTAMP'})
     createAt: Date
 
-    @Column()
+    @Column({default:'local'})
     authStrategy: string
 
 }
